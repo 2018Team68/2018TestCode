@@ -17,10 +17,10 @@ public class RobotMap {
     	return robotMap;
     }
      
-    public static final int DRIVETRAIN_LEFT_FRONT = 3;
+    public static final int DRIVETRAIN_LEFT_FRONT = 2;
     public static final int DRIVETRAIN_RIGHT_FRONT = 1;
-    public static final int DRIVETRAIN_LEFT_REAR = 4;
-    public static final int DRIVETRAIN_RIGHT_REAR = 2;
+    public static final int DRIVETRAIN_LEFT_REAR = 3;
+    public static final int DRIVETRAIN_RIGHT_REAR = 4;
     public static final int DRIVETRAIN_SHIFT_LOW = 1;
     public static final int DRIVETRAIN_SHIFT_HIGH = 0;
     public static final double DRIVETRAIN_AUTON_SPEED = .9;

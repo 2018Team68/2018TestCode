@@ -45,7 +45,7 @@ public class OI {
 	// Declare instance variables here
 
 	// Driver's Xbox Controller
-	private XboxController xboxDrive;
+	private XboxController xboxDrive = new XboxController(0);
 	private Button xboxDriveA;
 	private Button xboxDriveB;
 	private Button xboxDriveX;
@@ -82,7 +82,7 @@ public class OI {
 	// Drivetrain Tank Drive Left 
 		public double getLeftXboxJoystickValue() {
 			double leftAxis;
-			leftAxis = xboxDrive.getY(Hand.kLeft);
+			leftAxis = -xboxDrive.getY(Hand.kLeft);
 			// Allow for up to 10% of joystick noise
 			leftAxis = (Math.abs(leftAxis) < 0.1) ? 0 : leftAxis;
 	    	return leftAxis;
